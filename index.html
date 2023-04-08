@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Game</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"
+        integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="confetti.js"></script>
+    <script src="script.js"></script>
+
+</head>
+
+<body class="flex items-center justify-center h-screen">
+    <div class="flex justify-center h-full w-full items-stretch">
+        <div class="p-20 text-center flex items-center justify-between flex-col">
+            <div>
+
+                <h1 class="text-4xl font-black">
+                    Totallar
+                </h1>
+                <div class="text-sm text-gray-500 mb-6">
+                    By Shivank Kacker
+                </div>
+                <div class="">
+
+                    <div class="text-xs text-gray-500">
+                        Choose squares that<br> sum up to
+                    </div>
+                    <span id="next-number" class="font-black text-blue-500 text-8xl"></span>
+                </div>
+                <div id="selected-nums" class="text-xs text-gray-500 mt-8">
+
+                </div>
+                <div class="text-2xl flex items-center justify-center gap-3 text-gray-500">
+                    =
+                    <span id="selected-sum" class="font-black text-blue-500 text-7xl">
+                        0
+                    </span>
+                </div>
+            </div>
+            <div>
+                <button class="bg-blue-500 text-white rounded-lg py-2 px-4 block w-full" id="reset">
+                    Reset
+                </button>
+                <button class="bg-blue-500 text-white rounded-lg py-2 px-4 block w-full mt-3" id="change">
+                    Change Number
+                </button>
+            </div>
+        </div>
+        <div class="bg-gray-50 flex-1 flex items-center justify-center">
+            <div class="grid mb-6 h-[80%] aspect-square">
+
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
